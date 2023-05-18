@@ -9,6 +9,7 @@ using CadastroPessoas.Models;
 
 namespace CadastroPessoas.Controllers
 {
+    //Toda essa pagina foi gerada pelo EntityFrameWork, usando os parametros das Models Pessoa e Contexto
     public class PessoasController : Controller
     {
         private readonly Contexto _context;

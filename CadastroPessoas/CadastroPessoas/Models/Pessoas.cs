@@ -3,9 +3,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CadastroPessoas.Models
 {
+    //Essa é a Tabela/Formulario
     [Table("Pessoas")]
     public class Pessoas
     {
+    //Aqui eu defino o nome e quantidade das colunas
         [Column("Id")]
         [Display(Name = "Código")]
         public int Id { get; set; }

@@ -6,8 +6,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+//Aqui eu faço o Link com a Model Contexto, que usa o modelo da Model Pessoas.
 builder.Services.AddDbContext<Contexto>
-    (options => options.UseSqlServer("sever=DESKTOP-O6V28ED\\SQLEXPRESS; Database=CRUD-Pessoas-MVC; trusted_connection=true; TrustServerCertificate=True"));
+    (options => options.UseSqlServer("server=DESKTOP-O6V28ED\\SQLEXPRESS; Database=CRUD-Pessoas-MVC; trusted_connection=true; TrustServerCertificate=True"));
 
 var app = builder.Build();
 
